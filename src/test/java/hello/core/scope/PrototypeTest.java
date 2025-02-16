@@ -34,7 +34,7 @@ public class PrototypeTest {
 
         @PreDestroy
         public void destroy(){
-            System.out.println("PrototypeBean.close");
+            System.out.println("PrototypeBean.destroy");
         }
     }
 }

@@ -26,7 +26,7 @@ public class NetworkClient {
 
     //서비스 종료 시 호출
     public void disconnect(){
-        System.out.println("close: " + url);
+        System.out.println("destroy: " + url);
     }
 
     @PostConstruct
@@ -38,7 +38,7 @@ public class NetworkClient {
 
     @PreDestroy
     public void close() throws Exception {
-        System.out.println("NetworkClient.close");
+        System.out.println("NetworkClient.destroy");
         disconnect();
     }
 }
